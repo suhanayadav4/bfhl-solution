@@ -22,4 +22,9 @@ public class BfhlController {
             return ResponseEntity.status(500).body(error);
         }
     }
+
+    @GetMapping("/health")
+    public ResponseEntity<String> health() {
+        return ResponseEntity.ok("OK");
+    }
 }
